@@ -10,6 +10,11 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'image',
+      title: 'Image of the restaurant',
+      type: 'image',
+    },
+    {
       name: 'short_description',
       title: 'Short description',
       type: 'string',
@@ -18,8 +23,7 @@ export default {
     {
       name: 'price',
       type: 'number',
-      title: 'Price of the dish of GBP'
-    }
+      title: 'Price of the dish of GBP',
+    },
   ],
-  
-}
+};
