@@ -9,6 +9,8 @@ import Restaurant from './Component/Restaurant';
 import { Provider } from 'react-redux';
 import { store } from './Store';
 import BasketScreen from './Screen/BasketScreen';
+import PreparingScreen from './Screen/PreparingScreen';
+import DeliveryScreen from './Screen/DeliveryScreen';
 
 const AppTheme = {
   ...DefaultTheme,
@@ -46,7 +48,17 @@ export default function App() {
             <Stack.Screen
               name="BasketScreen"
               component={BasketScreen}
-              options={{ headerShown: false, presentation: 'modal' }}
+              options={{ presentation: 'modal', headerShown: false }}
+            />
+            <Stack.Screen
+              name="PreparingScreen"
+              component={PreparingScreen}
+              options={{ presentation: 'modal', headerShown: false }}
+            />
+            <Stack.Screen
+              name="DeliveryScreen"
+              component={DeliveryScreen}
+              options={{ presentation: 'modal', headerShown: false }}
             />
             {/* <Stack.Screen name="Simple" component={Simple} /> */}
           </Stack.Navigator>
